@@ -5,13 +5,17 @@ import { ref, reactive, onMounted } from "vue";
 <template>
   <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container">
-      <a class="navbar-brand fs-3 fw-bold" href="#">AURA.</a>
+      <a class="navbar-brand fs-3 fw-bold text-white" href="#">AURA.</a>
       <div class="ms-auto d-flex align-items-center">
         <ul class="navbar-nav d-none d-lg-flex flex-row me-4">
-          <li class="nav-item"><a class="nav-link px-3" href="#">NAM</a></li>
-          <li class="nav-item"><a class="nav-link px-3" href="#">NỮ</a></li>
           <li class="nav-item">
-            <a class="nav-link px-3" href="#">BST MỚI</a>
+            <a class="nav-link px-3 text-white" href="#">NAM</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3 text-white" href="#">NỮ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3 text-white" href="#">BST MỚI</a>
           </li>
         </ul>
         <a href="#" class="text-white text-decoration-none small"
@@ -185,12 +189,12 @@ h3,
 
 /* Navbar Xám Chì */
 .navbar {
-  background-color: var(--deep-grey) !important;
+  background-color: #2d2d2d !important;
   padding: 1.5rem 0;
 }
 .navbar-brand,
 .nav-link {
-  color: var(--bg-nude) !important;
+  color: #ffffff !important;
 }
 .nav-link:hover {
   opacity: 0.8;
