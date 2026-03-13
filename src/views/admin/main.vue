@@ -1,10 +1,11 @@
 <script setup>
+import Layout from "@/components/adminlayouts/layout.vue";
 import { ref, reactive, onMounted } from "vue";
 </script>
 
 <template>
   <div>
-    <router-view></router-view>
+    <Layout />
   </div>
 </template>
 
