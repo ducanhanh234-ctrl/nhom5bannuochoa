@@ -1,5 +1,21 @@
 <script setup>
 import { ref, reactive, onMounted } from "vue";
+import axios from "axios";
+
+const products = ref([]);
+
+const fetchProducts = async () => {
+  try {
+    const response = await axios.get("http://localhost:3001/products");
+    products.value = response.data.filter((p) => !p.isDeleted);
+  } catch (error) {
+    console.error("Error fetching products:", error);
+  }
+};
+
+onMounted(() => {
+  fetchProducts();
+});
 </script>
 
 <template>
@@ -53,70 +69,21 @@ import { ref, reactive, onMounted } from "vue";
     </div>
 
     <div class="row g-4">
-      <div class="col-6 col-md-3">
+      <div
+        v-for="product in products"
+        :key="product.id"
+        class="col-md-3 col-sm-6"
+      >
         <div class="card h-100">
           <div class="product-img">
-            <img
-              src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=500&q=80"
-              class="img-fluid"
-              alt="Perfume"
-            />
+            <img :src="product.image" class="img-fluid" :alt="product.name" />
           </div>
           <div class="card-body">
-            <span class="category-label text-uppercase">Eau De Parfum</span>
-            <h6 class="my-2">Skin Musc 01</h6>
-            <p class="price">2.200.000đ</p>
-            <button class="btn btn-outline-grey btn-sm w-100">Chi tiết</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-3">
-        <div class="card h-100">
-          <div class="product-img">
-            <img
-              src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=500&q=80"
-              class="img-fluid"
-              alt="Perfume"
-            />
-          </div>
-          <div class="card-body">
-            <span class="category-label text-uppercase">Unisex</span>
-            <h6 class="my-2">Grey Ash & Wood</h6>
-            <p class="price">3.500.000đ</p>
-            <button class="btn btn-outline-grey btn-sm w-100">Chi tiết</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-3">
-        <div class="card h-100">
-          <div class="product-img">
-            <img
-              src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=500&q=80"
-              class="img-fluid"
-              alt="Perfume"
-            />
-          </div>
-          <div class="card-body">
-            <span class="category-label text-uppercase">For Her</span>
-            <h6 class="my-2">Powder Nude</h6>
-            <p class="price">1.950.000đ</p>
-            <button class="btn btn-outline-grey btn-sm w-100">Chi tiết</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-3">
-        <div class="card h-100">
-          <div class="product-img">
-            <img
-              src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=500&q=80"
-              class="img-fluid"
-              alt="Perfume"
-            />
-          </div>
-          <div class="card-body">
-            <span class="category-label text-uppercase">Signature</span>
-            <h6 class="my-2">Velvet Grey</h6>
-            <p class="price">4.100.000đ</p>
+            <span class="category-label text-uppercase">{{
+              product.category
+            }}</span>
+            <h6 class="my-2">{{ product.name }}</h6>
+            <p class="price">{{ product.price }} USD</p>
             <button class="btn btn-outline-grey btn-sm w-100">Chi tiết</button>
           </div>
         </div>
