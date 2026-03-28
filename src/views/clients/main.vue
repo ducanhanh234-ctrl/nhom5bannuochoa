@@ -88,8 +88,16 @@ export default {
             Đăng xuất
           </button>
           <div v-else>
-            <router-link to="/login" class="text-white text-decoration-none small me-2">Đăng nhập</router-link>
-            <router-link to="/register" class="text-white text-decoration-none small">Đăng ký</router-link>
+            <router-link
+              to="/login"
+              class="text-white text-decoration-none small me-2"
+              >Đăng nhập</router-link
+            >
+            <router-link
+              to="/register"
+              class="text-white text-decoration-none small"
+              >Đăng ký</router-link
+            >
           </div>
         </div>
       </div>
@@ -215,7 +223,14 @@ export default {
 
     <section id="posts" class="container py-5 mt-4">
       <div class="text-center mb-5">
-        <h2 style="font-family: 'Playfair Display', serif; font-weight: 300;">BÀI VIẾT MỚI NHẤT</h2>
+        <h2
+          style="
+            font-family: &quot;Playfair Display&quot;, serif;
+            font-weight: 300;
+          "
+        >
+          BÀI VIẾT MỚI NHẤT
+        </h2>
         <p class="text-muted small">Tin tức và cẩm nang nước hoa</p>
       </div>
 
@@ -224,12 +239,21 @@ export default {
           <p class="text-muted">Chưa có bài viết nào.</p>
         </div>
         <div v-for="post in posts" :key="post.id" class="col-md-4 col-sm-6">
-          <div class="card h-100" style="border: none;">
+          <div class="card h-100" style="border: none">
             <div class="card-body">
               <h5>{{ post.title }}</h5>
-              <p class="text-muted small mb-2">Bởi {{ post.author }} - {{ new Date(post.createdAt).toLocaleDateString('vi-VN') }}</p>
-              <p class="text-secondary" style="height: 80px; overflow: hidden;">{{ post.content }}</p>
-              <router-link :to="`/admin/posts/detail/${post.id}`" class="text-decoration-none">Xem chi tiết →</router-link>
+              <p class="text-muted small mb-2">
+                Bởi {{ post.author }} -
+                {{ new Date(post.createdAt).toLocaleDateString("vi-VN") }}
+              </p>
+              <p class="text-secondary" style="height: 80px; overflow: hidden">
+                {{ post.content }}
+              </p>
+              <router-link
+                :to="`/admin/posts/detail/${post.id}`"
+                class="text-decoration-none"
+                >Xem chi tiết →</router-link
+              >
             </div>
           </div>
         </div>
