@@ -1,1 +1,540 @@
-{}
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Chanel No. 5",
+      "brand": "Chanel",
+      "price": 150,
+      "description": "Nước hoa kinh điển với hương thơm hoa hồng và ylang-ylang.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8mp5UP6Yek7MIvdUSKCJOBdlpzW-UbYro2w&s",
+      "categoryId": "2",
+      "isDeleted": false
+    },
+    {
+      "id": "2",
+      "name": "Dior Sauvage",
+      "brand": "Dior",
+      "price": 120,
+      "description": "Nước hoa nam tính với hương gỗ và tiêu.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8mp5UP6Yek7MIvdUSKCJOBdlpzW-UbYro2w&s",
+      "categoryId": "1",
+      "isDeleted": false
+    },
+    {
+      "id": "3",
+      "name": "Gucci Bloom",
+      "brand": "Gucci",
+      "price": 130,
+      "description": "Nước hoa hoa hồng với hương trái cây tươi mát.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8mp5UP6Yek7MIvdUSKCJOBdlpzW-UbYro2w&s",
+      "categoryId": "2",
+      "isDeleted": false
+    },
+    {
+      "id": "4",
+      "name": "Versace Eros",
+      "brand": "Versace",
+      "price": 110,
+      "description": "Nước hoa nam với hương vani và gỗ.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8mp5UP6Yek7MIvdUSKCJOBdlpzW-UbYro2w&s",
+      "categoryId": "1",
+      "isDeleted": false
+    },
+    {
+      "id": "5",
+      "name": "Yves Saint Laurent Black Opium",
+      "brand": "YSL",
+      "price": 140,
+      "description": "Nước hoa quyến rũ với hương cà phê và vani.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8mp5UP6Yek7MIvdUSKCJOBdlpzW-UbYro2w&s",
+      "categoryId": "2",
+      "isDeleted": false
+    },
+    {
+      "id": "6",
+      "name": "Tom Ford Oud Wood",
+      "brand": "Tom Ford",
+      "price": 200,
+      "description": "Nước hoa gỗ với hương oud quý hiếm.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8mp5UP6Yek7MIvdUSKCJOBdlpzW-UbYro2w&s",
+      "categoryId": "3",
+      "isDeleted": false
+    },
+    {
+      "id": "7",
+      "name": "Calvin Klein CK One",
+      "brand": "Calvin Klein",
+      "price": 80,
+      "description": "Nước hoa unisex với hương trái cây và gỗ.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8mp5UP6Yek7MIvdUSKCJOBdlpzW-UbYro2w&s",
+      "categoryId": "3",
+      "isDeleted": false
+    },
+    {
+      "id": "8",
+      "name": "Lancome La Vie Est Belle",
+      "brand": "Lancome",
+      "price": 125,
+      "description": "Nước hoa hạnh phúc với hương hạnh nhân và vani.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8mp5UP6Yek7MIvdUSKCJOBdlpzW-UbYro2w&s",
+      "categoryId": "2",
+      "isDeleted": false
+    },
+    {
+      "id": "9",
+      "name": "Hugo Boss Bottled",
+      "brand": "Hugo Boss",
+      "price": 95,
+      "description": "Nước hoa nam với hương gỗ và gia vị.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8mp5UP6Yek7MIvdUSKCJOBdlpzW-UbYro2w&s",
+      "categoryId": "1",
+      "isDeleted": false
+    },
+    {
+      "id": "10",
+      "name": "Paco Rabanne 1 Million",
+      "brand": "Paco Rabanne",
+      "price": 85,
+      "description": "Nước hoa nam với hương da và gỗ.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8mp5UP6Yek7MIvdUSKCJOBdlpzW-UbYro2w&s",
+      "categoryId": "1",
+      "isDeleted": false
+    },
+    {
+      "id": "ffbe",
+      "name": "Tour Đà Nẵng Update",
+      "brand": "khi",
+      "price": 1500000000,
+      "categoryId": "f0fa",
+      "description": "hehe",
+      "image": "data:image/jpeg;base64,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",
+      "isDeleted": false
+    }
+  ],
+  "customers": [
+    {
+      "id": "1",
+      "name": "Nguyễn Văn A",
+      "email": "nguyenvana@example.com",
+      "phone": "0123456789",
+      "address": "123 Đường ABC, Quận 1, TP.HCM",
+      "isDeleted": false
+    },
+    {
+      "id": "2",
+      "name": "Trần Thị B",
+      "email": "tranthib@example.com",
+      "phone": "0987654321",
+      "address": "456 Đường DEF, Quận 2, TP.HCM",
+      "isDeleted": false
+    },
+    {
+      "id": "3",
+      "name": "Lê Văn C",
+      "email": "levanc@example.com",
+      "phone": "0111111111",
+      "address": "789 Đường GHI, Quận 3, TP.HCM",
+      "isDeleted": false
+    },
+    {
+      "id": "4",
+      "name": "Phạm Thị D",
+      "email": "phamthid@example.com",
+      "phone": "0222222222",
+      "address": "101 Đường JKL, Quận 4, TP.HCM",
+      "isDeleted": false
+    },
+    {
+      "id": "5",
+      "name": "Hoàng Văn E",
+      "email": "hoangvane@example.com",
+      "phone": "0333333333",
+      "address": "202 Đường MNO, Quận 5, TP.HCM",
+      "isDeleted": true
+    },
+    {
+      "id": "4852",
+      "name": "anhanh",
+      "email": "154@gmail.com",
+      "phone": "",
+      "address": "",
+      "isDeleted": true
+    },
+    {
+      "id": "02f4",
+      "name": "haohao",
+      "email": "haohao@gmail.com",
+      "phone": "",
+      "address": "",
+      "isDeleted": true
+    },
+    {
+      "id": "3244",
+      "name": "haohao1",
+      "email": "haohao1@gmail.com",
+      "phone": "",
+      "address": "",
+      "isDeleted": false
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "customerId": "1",
+      "orderDate": "2026-03-10",
+      "status": "Đã giao",
+      "total": 3450000,
+      "items": [
+        {
+          "productId": "1",
+          "quantity": 1,
+          "price": 150
+        },
+        {
+          "productId": "2",
+          "quantity": 2,
+          "price": 120
+        }
+      ],
+      "isDeleted": false
+    },
+    {
+      "id": "2",
+      "customerId": "2",
+      "orderDate": "2026-03-11",
+      "status": "Chờ xử lý",
+      "total": 2900000,
+      "items": [
+        {
+          "productId": "3",
+          "quantity": 1,
+          "price": 130
+        },
+        {
+          "productId": "4",
+          "quantity": 1,
+          "price": 110
+        }
+      ],
+      "isDeleted": false
+    },
+    {
+      "id": "3",
+      "customerId": "3",
+      "orderDate": "2026-03-12",
+      "status": "Đang giao",
+      "total": 5200000,
+      "items": [
+        {
+          "productId": "5",
+          "quantity": 1,
+          "price": 140
+        },
+        {
+          "productId": "6",
+          "quantity": 1,
+          "price": 200
+        }
+      ],
+      "isDeleted": false
+    },
+    {
+      "id": "6917",
+      "customerName": "Đức Anh Nguyễn Tài",
+      "phone": "0353877236",
+      "email": "ducanhanh234@gmail.com",
+      "address": "số 60",
+      "paymentMethod": "banking",
+      "items": [
+        {
+          "id": "1",
+          "name": "Chanel No. 5",
+          "brand": "Chanel",
+          "price": 150,
+          "description": "Nước hoa kinh điển với hương thơm hoa hồng và ylang-ylang.",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8mp5UP6Yek7MIvdUSKCJOBdlpzW-UbYro2w&s",
+          "categoryId": "2",
+          "isDeleted": false,
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 150,
+      "status": "pending",
+      "createdAt": "2026-03-19T03:18:07.707Z"
+    },
+    {
+      "id": "f13d",
+      "customerName": "Đức Anh Nguyễn Tài",
+      "phone": "0353877236",
+      "email": "ducanhanh234@gmail.com",
+      "address": "số 50",
+      "paymentMethod": "cod",
+      "items": [
+        {
+          "id": "1",
+          "name": "Chanel No. 5",
+          "brand": "Chanel",
+          "price": 150,
+          "description": "Nước hoa kinh điển với hương thơm hoa hồng và ylang-ylang.",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8mp5UP6Yek7MIvdUSKCJOBdlpzW-UbYro2w&s",
+          "categoryId": "2",
+          "isDeleted": false,
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 150,
+      "status": "Đã giao",
+      "createdAt": "2026-03-19T03:22:13.034Z"
+    },
+    {
+      "id": "d318",
+      "customerName": "Đức Anh Nguyễn Tài",
+      "phone": "0353877236",
+      "email": "ducanhanh234@gmail.com",
+      "address": "số 50",
+      "paymentMethod": "banking",
+      "items": [
+        {
+          "id": "1",
+          "name": "Chanel No. 5",
+          "brand": "Chanel",
+          "price": 150,
+          "description": "Nước hoa kinh điển với hương thơm hoa hồng và ylang-ylang.",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8mp5UP6Yek7MIvdUSKCJOBdlpzW-UbYro2w&s",
+          "categoryId": "2",
+          "isDeleted": false,
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 150,
+      "status": "Đã giao",
+      "createdAt": "2026-03-19T03:23:28.977Z"
+    },
+    {
+      "id": "0805",
+      "customerName": "Hoàng Sơn",
+      "phone": "0353877236",
+      "email": "ducanhanh234@gmail.com",
+      "address": "hehe",
+      "paymentMethod": "banking",
+      "items": [
+        {
+          "id": "ffbe",
+          "name": "Tour Đà Nẵng Update",
+          "brand": "khi",
+          "price": 1500000000,
+          "categoryId": "f0fa",
+          "description": "hehe",
+          "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUSEhMWFRUVFRUVFRUVFRcVFhUWFRUXFhUVFRUYHSggGBolGxYWITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0lHx0uLS0tLS0tLS0tLS0vKy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAADAQIEBQYABwj/xABKEAABBAADBQIJCAcHAwUBAAABAAIDEQQSIQUTMUFRBmEUIjJxgZGhscEHJEJSc7PR8BUjMzRydLJDYmOCouHxFpLCU1SU0+NE/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAECAwQF/8QAKxEAAgICAQMEAQMFAQAAAAAAAAECEQMSIRMxUQRBYYHBIjLRI0JxkfAU/9oADAMBAAIRAxEAPwC/xEarMVGr2SK1GkwtrZSMnAyeJiKiiBy1ztnjomjZoV7ojpmchw5VjhYCrhuAHRGZhQEbh0wGHZSlsSiNdSluylE4lCc5PchuCQ6BvehmVdIFHeFVk0H36G+dR3Whm0wCvnQ98mZSkcxFiofv0nhKBI1R3JiosPC0hxiq3EpuYooRYvxaYMYoJTS0o4DksDi03wtVzrQy4ooVstxilxnBVRnSiYooNiyc9CcVD8ISb9FBZKXKLvkqORcHpphSblTCE0tXHZ6WpE3SQxqUWJjmJ7E6kYtTCpD2ID2KkyXEC4oRciPYhmMq7Io7MkKUMTxGiwoiSNWY2z2uggjbJTnh7pGtyir3RDXnxuVkBa58a8R7RPvB4XrnxntlZ/uhviwS5Lx/ylt5YU19uP8A606P5SGn/wDkP/yP/wAl50iQnVKx0ev7D7VxYiwcO5tdJwffCpOP7RYaMWY5fQ9j/Zlb71guyWLawOzE8vJBd68t0j7VxQk0bZJ4DK6/VSjZ2XomjabL2nFisu6L7fYa17Q0khwbQyucOJA1I4hGexUHyWtPhOHaRVCR1HThLHy9C1BiVwyNtpiyYkkmiEYkwxKaYkNzVexjqRwxIUV6juKLE0Ne1BcxGJTHBOyWiM8ITipLmITolVkuIAlNLk98ZQnNKdi1HZ1yHlSphR7ZS7KuDk4FeceqNypCxFSFFioA6NCdEpSaQmmKiC+JMMSmuYhlqqxakTdLixSHNQiE7JoA5i8L2rJHHh43MiaWzTYh1P1LchZG0BwokVZIN69OJ95cvn/acT3YSIODWCOWZozPpz94WPzAOAGUaCwTqeS0XMf++SGqZTt2i4Gw2LzbmIj/AFNKlwdo8S3yXtb/AAxRD3MUJuEbzmjb/wB7vaxhCPFgI/8A3UI87cR8IUuCTV9mu0OJeJC54dVVcURrxhf0Eu09tyjNYhdV+VhsOeF893ftUPYOGaA/Li4BeWwGYk6WONwebgnz4HMTmxWHd5VhrpIzz4Olja0aqDRGo+THH72YDdsY6SGQZ48zSwtdTS0WRw10rhXBahwpZT5NMKY8SJAQ5kUEjnBkkUpIcaJGV30db7rqzotPLmPJEe7Ll2QGeQBQZcQjy4V55IB2a88lqqMGmwO+TS5SRsp6UbMd3p2idWRtEtBTG7NPROOzijYNWVziEIvVg7Z5QzgCjZBqyvKTdKa/C0gSNITslxAbhcnWUqoVI38G12nmrGHGA815DhtpuHNXuB28RxKiWHwaxzHo4xAS78LFM7Qd6e3b46rPpM16qNjv12+WQ/6gHVcNvDqjpMOqjXb1NLwsw3bg6rnbbHVHTYdRGkLwm5gs3+nAlZtsdU+mxdRGifwXz1tw/M8L/HivvI17Yza7TzXim1WMZho3CNpMks1l3lN3ZY2g5tGiSTV0CSmk1HnyvyS5W+PH8GbSgI8eIA/smHz5z7C6lJZth44RwenDxO/qaUEE3s84NEmc1eWr7iFxeHOLWmyXOoDUmyeAU3Ye2HOzZocMarXweNtWa4sA/JQYtrBz8ow2HFkgFrZGniR9GUdFm/c1j3Rqvk4jLdoQAiv1GK49zCV6rh8K3K3zD3Ly3snKBiwwNEbpIJ6fGXtyGFu9sAuOpDcpskEEggrb4fboodKClJs1lx3L/wAFak8Faql23mjmo8naIJ6yI2Rdvgao0jWhUM3aJV023SVSgxPJE1WYdyUUVkI9rkqbHtSuabgxdRGhMIQX4YKkftpOi20lqw3iWTsClGyWnkhwbSDlOjxoS5HwyJ+g29Eqm+HBci2PWJ5E1EbIg0nWu44KJDZj1TvCD1UQFKXJgSxiD1T24gqCHJcyB2WLcUeqXwk9VXhycZEDJ3hB6pRiD1UKLVzRfFzRfSyB8VUN2q50L5so/aNiYy3Brba55e4tIc53igDUDU6dIlKi4x2ZqWYs9VUf9NYjFwxMAjhDHTOzTzMjzCZ7XDKyy/QN18VY7EY+VxNvd5gaHqGijOeTxJPnKylKy4qjSbZ7FYjDFoDm4jMLvCtllDe5xLALVjsH5PXTszy4gYc/UkhmLv8ASFiFyjkD1PBfJsI7y7QiN1xw+IA078qrsR8ns8DhIJ4JQDeVu/a7W/rQ1WvVeepXBKilKnfg9Kw8EuHnbO5lhkeJiphLrdNBI1rgSB4gNWe8aIwxfK6PS9fUvLk/fO+sfWU4fpCcnPuenOxBTDOsb2ae+SUQh7mlzX5HZtA9rS5uZpsOaarkdb5UdRyafrMjf5t5G2Su+s1ehaxkm6MpRaVhzKmlyY0pxVNgo2KH0n+ElDXFqVoNRTOU+OZByJQEyaZaYfFVzVnh8b3rNhyeJ6UOFlKVGq8MC5ZjwsrlHTL6hWZF2RSDGu3a6LJ1I2RJkUoxppjTE4kfIlyo2RIWpk0gYauyomVdlQIYNCD0LT6iFnID8yP8y32Qv/FacM9496ysZ+ZH+ZH3Llll7G2P3KglIlISLIDly5LSKARK7iupcU6ARcuXKQLzsT+/Qd7iPW1y1bB+rh/l8P8AcRhZXsN+/wCH+0+BWujH6uH7CD7liI/v+i3+z7AkLsyI8IRC2MbOzJN4kITHBVRLbH71cZkGkjk6J2YbfJjpkNDKKRNsNvVyBa5MOS9MSbkTTiQmOxIU0dOxYbP2VJO7LE0uNXpyHUk6KJi4CwlrhRBII6EcQtV2W7V4fCYWUkXMScraPjaeIL5AG79Kw+M2mZHOe825xJJ7ybKmLk5O1wgyOKivI9yY5yiuxYQnYpbHK5E0PS51X+EpvhKCdizjdbmjq5o9oWWhHzN38y32wvVzh8T47P42f1BVMH7k/wDmo/uZlll7f6OnA7KV419A9yatTtHDB2BEsIhdG3cNlGRrcTh5Q0glzqzSRSG3A2RZaNMtF+1dms/R0bmZd7hpG7/K12bLi4xJEZLAFscxzNCeI4E0sSzKBKt1jcQ/wvY5DnXuMGRRPF0zg6u8gAHqmdk8dJNNjcAZHEY5kzWeOaOIYTLCXG9cxZuzxveJpgYhIVsJ2ulnw2Ble7c4OK5wXOIZQdiMVo28rm26LT/0x1U7auzYcTtPAyuLDBtB0BkMbXsjMgkEGKYwOAc0F7SdQKEgKGwMAuWpxuMxU7ca0hu6jIc6Jz42DDBkoYzcxuIIAvd0wfTAPJH29kbhInfqc0mHw7S0QsEtl8rjPvAwEmoWsPjG85tSBV9h/wB/w/2nwK2DtGRfYQfcsWM7IOrG4c/4rfbotptN4aYx/gQ/dhOC/qfQ5usX3+ARKaXJGyBc5wXRRzWcCFJiiaVBc5FjceRSaGpB5oGhRCAivc480BzChA2SocECECfC0jYecjROkltLkfFEDwdcpVhcnYqInjKNM8hak7M0VfitlHos1M6JYmZmXEFTuz2y5cbKYYS3Pkc/xjQIbWl9bITsRsk9EXYRkwmIjxDOMbrr6zSKe0+dpIVSnw67mSxPZX2KSZ7muLXAgtJa4HiCDRB7wbTN6tN2zhinxck2HvJJT3WK/WHy6HfofOSqYbMKqORNWRP08lJohb1dvVOds4oZwB6Kt0Q8MgGHl8dn8bP6gmx/uUn81H9zMpDMGQQehB9RtRWu+ZSfzUf3MyzyO19m2GLjdjJ9tEx7vdRC2xMkcM+aVkIAY1/j0PJbeUNJyjvtzu0UvzmmxgYs3MMtjys/iBxOXx/GBGoI6aKoKQrNpGhcYXtLiY42Rtc2owRE8xROliDiSRFM5pezVxIoiiSRRKh4WZ8T2SRktfG5r2OHFrmEOaRfQgFWUfZiV0YeHM/ZNlDc3jPDwSGsbxc7QAjqR51JZ2ZeWSPzj9WJCQATm3b3MphNB3kknmAW6G1UaJdlTBtiZhmIcCcQ1zZi6ON5eHOzO1e0ltuo22tQOgXTbamdDFhy5u7hc58QEcbXMc6sxEjWh5uhdnkOgVxD2Sc8tqeGjlu3gFhLC82L4A7sE9ZWaXYDP+jpXOc1ksLgyrcXENvPle0OAIzNHjlvHKRpZypvUaIGN7RTStka7d3NQmkbExsk1PbIN48Djma1xIouIt1lLJ2gc5rWmGHM2DwdslSZ2x63QLy3MQ5wvL9I1WiqE6FtuAWbQyd2fNYqD7aL+sBbLtc8iZv2MfxHwWO2E35zD3TRfeNXoXaLCXKCfqV6pHrT9s0/gJLbFXz+DMRzFEMxViMEEngQWm5zdNlfvijR4hS/AkvgQS2Q1BoGyZPzIggASZVNl6jbSIgCXKEWGoJci5UiLDU17aT24bNwCzOH2r3rU7E2vG1luItccm0j0MbUnTGYjY9CyOKi/ogdFPl2tvD3IsM4Qm65Ket8FZ+hW9Ev6EHRX8RBUhsYS3Y0kZV2wR0ST9ngKFcha2mEwuZwHekxkQLin1GVpExuO7K5cHNiboMjlcBXHIwkm+S8ob+5v/mY/upV7z2mxLhs/FRjRu4m8/7NxpeCMPzWX+Yi9sc9/BaQk3F35ObKkpfRWFIU5IQtpdjnF5BTI4+5Q2MtW2GjtXjM8jAuh7kF8Xcp8g1TcoIWjRmpFVI2k7BDx2+dSMVH0Qdn/tWfxBYzRvF2iz2LH85i+1Z/WF6P2jYRLR+r7M7yPZSwOyxWIYekjT6nr2vbexWukBP1G+6/ij1D1cWX6dbqSPPg1ODCta7YbQlGymrDrHT/AOcyJaU1y10my2Kox2BA4FNZLFL09FG5CcVKmZSgSuWqdnNOOo4yJu/Ud1oZYVVIy5Jm/wC9coWQrk6QWyphx5HFWEG2K5qPjcDSp54iFm4GztG4h2g/db/Kd0H7vPyz1my+pGw/aIdVmcVt1h2bFgmhwkbiHzSO0ym2lraN3dO9ioGyuHNYqDd2aOaVUew4Lb7TzV3htrtPNeFw7Re3mrPC9o3DiSk8bKWU9zw+1ANQaRW4oFeOwdre9W2E7XjmVGjLWVG87VyDwHFfy8v3bl4WwfNZe6eE/wCiYL0DavapsmFnZeront9bSFgIT82n+0gPslHxWkOIv/JnN3L6KxgtPkbrXcF2H4qfBs58z2sjFvdoB6CbPqXR/ZZzW3KkRsIzX/LftVzh4xQpR8XsuXDucyZmV/iBouwQ4nxgen4KzwsWU0VWOSa4JyQknyVuIwzrJpLhMI9xOnALdYDY7XgOLhXTmpePhgw0Zcf9ypnnS4RpD0rq2YcbN1sjRVkWEDcQ2/JLuXIq3xW3muJptDlqqYYvNOwg6Z2ivOaUSbfcuKjHsWGEFTt+0aP9a9Z7a9oTBid3X9nGfWP9l5ZhYx4SAeAkv1OJHwWx+VJ140H/AAIfcVplSnNRfgyxOWODkvIkva4nkozu1LuizJKS0ujAH6mfk0Z7TvUbEbaLuPvVKuVLFFewn6mb9ye7H2gOxFqNSSlSijN5GyWMQEvhAUMNTsqTigU2SfCAuQVyVFWS8Sy1SYuBbaXABV+KwbW68+X4rm6yPWniTRh5MORyv3BBMbunqC08rAPojzn8FDlaSNfdp6k+r8HI8VFC5tcU0lXLogeISOwza4JrIidWUyUFTn4DSwVEbHRAccuoB4mh1NK9kydWcyQ9evuU2IfqZh9mfUT+Kl7b7OyYbJJmZLDJe7micC13HQjiHaaj2oMbbZMOZaD6nNWeya4LUWnyVuH4qy2ZtZ+Hnjnj1MZstPBwOhafOCVVZSEVkZHFaNpx1Zmk1LZGn7TdpfDJmPyZRG0gA0SSaPw9pQMftNu7FAh1qD2cwDJ8VBDJmDZpooraQHN3kjWZtQQazXXPqFeYbYUEuLfgg+SN++khhkkcx8b5GPc1jJGtY0szkABwLqLhoVEUo0l7Gspt3fuUDNsuHM+tMxW2pZNHuJHefVoi43ZTo6zNAOaRhYHsc5ronZXh7WklmvC6ujVhRDhOeldFffkyXADepIH09p6OB9RRnxDgAnS4UBoKfcC+DvnX+cfAq3+UvaJ8KjPXCw+sF4PuWfimzTBw5lp9w+CnfKQbxEJIP7rHwPPPIolKsifwUoJ4mvn+ShO0Sk/SCh8eR8/E+lJuj0K0WRsy6KLBu0EZm0FUGM9E1VuT0kXYx6PHiwVnU5shHNG6JeLwaTwkJHYwLPCY9UjpSnsh9Nmg8OC5Z7Oeq5LYOmz1c4vQXzVfJKX6NaT5hZ9QQPCq4ctfUgtx+TUDmD6R/wArzuT2XJEeZwUZwSSShx1sEpCTlPJaJHO2MZGHkNDmts1bjTR3uPTzAnoCdFa4jZsRjzROLqrUjKXaUTl+jrrR1AVO2Nveixz5NASL71Mk32Y4SSu13DYPZ7pH5GaHqVA2xsR8RLXtp3EHiHd4PNaDD7NxLXZ2Ci2iSHDSxdEK/wBn4yLHsMEzcszfePpNvn3LOWSUXfsbx9PGcafDPKWseKabDbJq9LrU11oce5WWCZmLmji5pA1q7ANa+b2qZtWaTCvfCQA8E/rBWaj5OQ1beBOlcavRQsO79STx1dR15RgkceXxXTGV8nG46WjvApBoWmxyI10BsUeaC7Duuyx3K7sX6OSsI5CQ0nxtKzAmm1wFnh+eimnEkaOBFaXmAHTR1UTfRa7EagezbhHjMLI8tYyPEQSPc5waGsjlY5xsnXQHQWTyCuMO6CPaDsZLMwwx4uTEMbG4PkmqV0sLGNbeXMQyy8tAF89FHbOCK3rh3Zyf/ApzJgbqdtc2ueSPVlT4E4hmzYeYNmlbGJpTtFxOUOa2aUtdhjMK8ZodvACQQ0lpdQRQ7DCKR7Y4XTCDCinxRFrp2zHfmJjvE/ZUCQMrnBxF2CYe6Zx3sZv+82uH94hKAw6l8YqtXSMPuJRSJozuKgcAA2M8tSfZp70+OBxAHk6WSRQoHXxjp+eau8RBGBmMkRBNEh966kDVtX3WELaLsmrmPPAAGxfSmloJ0+Cq0LUiYbBvc4Vy4u4NA1Nlx0HArU7f2Yyd8UpH9g0DnoHyfisXiHSSlkUZ8s0GA0c50AJPijlr7lse0naFuDkZBJAJcrNXZy3+1kFAAd3HvXPlf6lXydWFJRd+V+SONjRccup4jqeqYcAxvFuinbN7Q4Oagc0LvqvpzT/C8Vr3GrQxtfCyu3YkonQZxlB6UTpfpSUvJpLGmrTKyTDR/VHqVfiMDFr4o9S0c+A1GU6Vw4+lQsTgK1JaNaALh42l8Br6dOKvYweOjOybJYfJ0VXidnuadNQtO6E3qa8yjzAApbMhxRmvBX/VKccG/otBLJQuuCDnBCNidSh3DuiVXNBIlsw1NK/BjnahzRN46n08FpsRhydWt004m9VW4rDu1AoAdyyR2tFBPoLA+Kjh7zx06KwmwvU37lDmcBrdKzKSBGUi/Fv01qheFAiwC0jpqdOHcos+MN8L6fkKJJjHEVoB3KlFmbkjR43tVK8HK3IT5bx9IjS+49yo5NpyF4e0kOb5Lh5ShmQnQ8OisNjPjEjc8mRtguOQuJAItunUXXLrSFBJFSzznxZb7V2Q4ulmxD5GBri0fqxIS0aB2r26XaqMSGiIbsuLRK/VwDXHPGwCwCQNWv5lWO29vYjF3vGAXZtjTwJ5m6KpRKcuQ0ACXcNbqtddf9ylFNBl1b4Gx4WSszWmuvCkaHFTtNNkkaf4nCkaPGgDLm0v6pvnfvU7C4vCg2/O899tboTVNAvn15KzNR+TmbSlIy5wSRxLGE+kltqTBjHji5vIeQzj/wBqP+mcM1r2RtjIe5pdmDr8Ww3Us7zz1tRZsfCWkZIheltNFulW2wKKFyXwvcE7a8jX6ZDyB3ETjxoCy3qealSbUkDS5z2gaeKI4wRZrgG8UDDTQAaSAaVZonz3fFdNJCRlBDteWW/eqsih0O25S01KQCTqMo4cyAByv1qtxErncDzB416e+1OdLhxWU6gOsEitf4eahylh1zD0EKkSztlvLcTh+VTRG/NINVZfKDJvMbYOmUC+lveT71Ty0xzJAbAN8bujei7FyOnIcTqbocfb5lnP9yZcX+lojzMY0uDXl2oymqB62L0TsTHevHvT4sM0GyeHHT4K0bhdBl5+gV14KWxpFds7aM0RqOQgc28R6jotPgtuxSMqaxICRQbenI36Ss6Y3X42XQ8L494v0pXOI0DOetD48EDVov3YqIDMDp0rX1KDLiGuNqCxoIsHTXneveiWxuo10sm9KRsFWFlxAcCEAmhohR4vUfq2nzn0+lHGPFAUAO7l5kgAWuRvCm9D7fxSJDo02z+18jWeOxr60sU0k8wdKULafa6WUjJGGgf3SSfOeACp6cAS4jza6+jzIUUhd0NC+OlcPGPAFFIrd9grdoPPEl3o4elKyNz9DTepJr2FCyg6Zm3Ysd/Grrzp25GlECzdXr7eB9CZPIybAAf2ja6n8eCWHZ8fMhx6XlB9QS4ljBwcDfDMR771CbG5gAzP104G7rushO2KkSfAYcwG71P94n3lBn2dGSatvd0TP0k0cLFWdOJPfaf4Wx1GtR5xy/OqVsKQZ0V6Fx0FDXjSBHgY3GiXZupujw40AeHPVHdLfIAXx0rnzvvCFG8ucRZrhoKFVXn6JFKvcY7AsGlA94Lvx9qK3D6cQB3CvbSdiJGgVYPf+eKZvr4AenU+vzphwR58HR+Og9IQn4UciSOn54Kc2SwbH/HRQpJwXVy7hQrogVIKzCtq6sVzy8/Qn7hleSD6r96iudd68vyLRY46FcefnHRFhS8DZIK1YPQOI9mqE1t87J6m1Ojlqx16dDwQy8Xrx6VaLYqQKKMgiqb31rr6NFJjwt6k8NdNTR7vihOPHp1KTf8A96h6iBz4IHwWWyoxle8gaAkUNSfPVkDr3qvmxxOt8eR0A9CI7HZRlbXkgEctPMqnMPOihNk9+NBA42PMKPdQvggyTtOrgeHCzRPL0cVHJF2k0rVOhNhN/f0WjTkK9KI7FlzcpHp/26qM2k4N9NoEhzSRzNdyM9wHi6kGuNWD+fegt43X/KHZJRQWSMo+qPauTtw763vXIGFxPlO/yfBHxH7Fvo/8ly5IsA3g3+P4KO36Xn/FcuQSDfwH55FBC5cqXYzkKpeC8l/8PwK5ckxxJ2H8hnn/AAQ4P2g8x/pXLkixcd5R86YP2I9PvXLk2CI8PlH88kOTj6Fy5IYrvK/PROf5PoPvXLkCYrPop0HB/pXLkAPm/PqUM8SuXJiQJ3FOjXLlXsZruKziPQjP5LlylmiBu/FKeX55rlyAOdxTsL5Y8/wK5cgCYuXLkgP/2Q==",
+          "isDeleted": false,
+          "quantity": 99
+        }
+      ],
+      "totalPrice": 148500000000,
+      "status": "Đã giao",
+      "createdAt": "2026-03-19T03:27:32.029Z"
+    },
+    {
+      "id": "0681",
+      "customerName": "Đức Anh Nguyễn Tài",
+      "phone": "0353877236",
+      "email": "ducanhanh234@gmail.com",
+      "address": "số 60",
+      "paymentMethod": "banking",
+      "items": [
+        {
+          "id": "7",
+          "name": "Calvin Klein CK One",
+          "brand": "Calvin Klein",
+          "price": 80,
+          "description": "Nước hoa unisex với hương trái cây và gỗ.",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8mp5UP6Yek7MIvdUSKCJOBdlpzW-UbYro2w&s",
+          "categoryId": "3",
+          "isDeleted": false,
+          "quantity": 2
+        }
+      ],
+      "totalPrice": 160,
+      "status": "Đã giao",
+      "createdAt": "2026-03-28T12:55:56.517Z"
+    }
+  ],
+  "employees": [
+    {
+      "id": "1",
+      "name": "Trần Minh F",
+      "email": "tranminhf@example.com",
+      "phone": "0444444444",
+      "position": "Quản lý",
+      "salary": 15000000,
+      "isDeleted": false
+    },
+    {
+      "id": "2",
+      "name": "Ngô Thị G",
+      "email": "ngothig@example.com",
+      "phone": "0555555555",
+      "position": "Nhân viên bán hàng",
+      "salary": 8000000,
+      "isDeleted": false
+    },
+    {
+      "id": "3",
+      "name": "Đỗ Văn H",
+      "email": "dovanh@example.com",
+      "phone": "0666666666",
+      "position": "Nhân viên kho",
+      "salary": 7000000,
+      "isDeleted": false
+    },
+    {
+      "id": "75e6",
+      "name": "anhanh",
+      "email": "154@gmail.com",
+      "phone": "",
+      "position": "Nhân viên bán hàng",
+      "salary": 8000000,
+      "isDeleted": false
+    },
+    {
+      "id": "9065",
+      "name": "Hoàng Văn E",
+      "email": "hoangvane@example.com",
+      "phone": "0333333333",
+      "position": "Nhân viên bán hàng",
+      "salary": 8000000,
+      "isDeleted": false
+    },
+    {
+      "id": "e9b6",
+      "name": "haohao",
+      "email": "haohao@gmail.com",
+      "phone": "",
+      "position": "Nhân viên bán hàng",
+      "salary": 8000000,
+      "isDeleted": false
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Nam",
+      "description": "Nước hoa dành cho nam",
+      "isDeleted": false
+    },
+    {
+      "id": "2",
+      "name": "Nữ",
+      "description": "Nước hoa dành cho nữ",
+      "isDeleted": false
+    },
+    {
+      "id": "3",
+      "name": "Unisex",
+      "description": "Nước hoa unisex",
+      "isDeleted": false
+    },
+    {
+      "id": "f0fa",
+      "name": "Nam KO CÓ KO",
+      "description": "ko",
+      "isDeleted": false
+    }
+  ],
+  "revenues": [
+    {
+      "id": "1",
+      "month": "2026-03",
+      "totalRevenue": 125400000,
+      "totalOrders": 48,
+      "totalCustomers": 120,
+      "isDeleted": false
+    },
+    {
+      "id": "2",
+      "month": "2026-02",
+      "totalRevenue": 118000000,
+      "totalOrders": 45,
+      "totalCustomers": 115,
+      "isDeleted": false
+    },
+    {
+      "id": "ef99",
+      "date": "2026-03-17",
+      "amount": 15000,
+      "description": "5858",
+      "isDeleted": false
+    }
+  ],
+  "posts": [
+    {
+      "id": "e4b2",
+      "title": "hehe",
+      "author": "gege111",
+      "content": "gegeg",
+      "status": "published",
+      "createdAt": "2026-03-28T13:19:42.963Z",
+      "isDeleted": false
+    },
+    {
+      "id": "cb79",
+      "title": "kuku",
+      "author": "julnkac",
+      "content": "iabcinac",
+      "status": "published",
+      "createdAt": "2026-03-28T13:22:10.786Z",
+      "isDeleted": false
+    },
+    {
+      "id": "1e1d",
+      "title": "kaknckamc",
+      "author": "abcabjck",
+      "content": "iabcinc",
+      "status": "published",
+      "createdAt": "2026-03-28T13:22:22.185Z",
+      "isDeleted": false
+    }
+  ],
+  "users": [
+    {
+      "id": "u1",
+      "email": "admin@aura.com",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": "u2",
+      "email": "staff@aura.com",
+      "password": "staff123",
+      "role": "employee"
+    },
+    {
+      "id": "u3",
+      "email": "client@aura.com",
+      "password": "client123",
+      "role": "customer"
+    },
+    {
+      "id": "64dc",
+      "email": "154@gmail.com",
+      "password": "12345",
+      "role": "employee",
+      "customerId": "4852"
+    },
+    {
+      "id": "a0e1",
+      "email": "haohao@gmail.com",
+      "password": "12345",
+      "role": "employee",
+      "customerId": "02f4"
+    },
+    {
+      "id": "da28",
+      "email": "haohao1@gmail.com",
+      "password": "123",
+      "role": "customer",
+      "customerId": "3244"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

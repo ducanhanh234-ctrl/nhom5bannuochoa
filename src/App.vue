@@ -1,11 +1,7 @@
 <script setup>
-import { ref, reactive, onMounted } from "vue";
+// App entry point
 </script>
 
 <template>
-  <div>
-    <router-view></router-view>
-  </div>
+  <router-view />
 </template>
-
-<style scoped></style>
