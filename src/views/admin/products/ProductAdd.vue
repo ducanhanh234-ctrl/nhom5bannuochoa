@@ -63,6 +63,7 @@
       </div>
       <div class="col-12">
         <button type="submit" class="btn btn-primary">Thêm sản phẩm</button>
+        <!-- nút thêm sản phẩm nước hoa nha anh em  -->
         <router-link to="/admin/products" class="btn btn-secondary ms-2"
           >Hủy</router-link
         >
